@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TipCalculator</title>
+		<link rel="stylesheet" href="6thtask.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+			rel="stylesheet" />
+		<script defer src="6thhomework.js"></script>
+	</head>
+	<body>
+		<header><h1>Tip Calculator</h1></header>
+		<main>
+			<div class="wrapper">
+				<div class="calculate">
+					<form id="tipCalculator" action="/6thhomework.html" method="get">
+						<legend>Bill</legend>
+						<label for="bill"></label>
+						<input type="text" placeholder="💰 0" class="inputs" id="bill" />
+						<p class="calculate-titles">Select Tip %</p>
+						<div class="percents-wrapper">
+							<button
+								class="calculate-buttons first-calculate-button"
+								id="fivePercent">
+								5%
+							</button>
+							<button class="calculate-buttons" id="tenPercent">10%</button>
+							<button class="calculate-buttons" id="fifteenPercent">15%</button>
+						</div>
+						<legend class="calculate-titles">Number of people</legend>
+						<label for="people"></label>
+						<input
+							type="text"
+							name="people-counter"
+							id="people"
+							placeholder="👤 0"
+							class="inputs" />
+						<button
+							class="calculate-buttons final-calculate-button disabled"
+							id="button-calculate">
+							Calculate
+						</button>
+					</form>
+				</div>
+				<div class="totals">
+					<div class="totals-part">
+						<div class="totals-text">
+							<p class="totals-title">Tip amount</p>
+							<p class="person">/ person</p>
+						</div>
+						<p class="result" id="tip-amount">$0.00</p>
+					</div>
+					<div class="totals-part">
+						<div class="totals-text">
+							<p class="totals-title">Total</p>
+							<p class="person">/ person</p>
+						</div>
+						<p class="result" id="total-amount">$0.00</p>
+					</div>
+					<button class="reset-button disabled" id="button-reset">reset</button>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p>Thanks for the tip!</p>
+		</footer>
+	</body>
+</html>
